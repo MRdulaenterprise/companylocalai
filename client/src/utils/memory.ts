@@ -1,4 +1,4 @@
-import type { MemoriesResponse, TUserMemory, MemoryArtifact } from 'librechat-data-provider';
+import type { MemoriesResponse, TUserMemory, MemoryArtifact } from 'company-local-ai-data-provider';
 
 type HandleMemoryArtifactParams = {
   memoryArtifact: MemoryArtifact;

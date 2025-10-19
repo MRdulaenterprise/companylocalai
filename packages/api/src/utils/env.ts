@@ -1,6 +1,6 @@
-import { extractEnvVariable } from 'librechat-data-provider';
-import type { TUser, MCPOptions } from 'librechat-data-provider';
-import type { IUser } from '@librechat/data-schemas';
+import { extractEnvVariable } from 'company-local-ai-data-provider';
+import type { TUser, MCPOptions } from 'company-local-ai-data-provider';
+import type { IUser } from '@company-local-ai/data-schemas';
 import type { RequestBody } from '~/types';
 
 /**

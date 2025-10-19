@@ -1,13 +1,13 @@
 import { useCallback, useState, useMemo, useRef, useEffect } from 'react';
-import { useToastContext } from '@librechat/client';
+import { useToastContext } from '@company-local-ai/client';
 import { useQueryClient } from '@tanstack/react-query';
-import { Constants, QueryKeys } from 'librechat-data-provider';
+import { Constants, QueryKeys } from 'company-local-ai-data-provider';
 import {
   useCancelMCPOAuthMutation,
   useUpdateUserPluginsMutation,
   useReinitializeMCPServerMutation,
-} from 'librechat-data-provider/react-query';
-import type { TUpdateUserPlugins, TPlugin, MCPServersResponse } from 'librechat-data-provider';
+} from 'company-local-ai-data-provider/react-query';
+import type { TUpdateUserPlugins, TPlugin, MCPServersResponse } from 'company-local-ai-data-provider';
 import type { ConfigFieldDetail } from '~/common';
 import { useLocalize, useMCPSelect, useMCPConnectionStatus } from '~/hooks';
 import { useGetStartupConfig } from '~/data-provider';

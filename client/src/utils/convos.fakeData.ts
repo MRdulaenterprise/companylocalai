@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
-import { EModelEndpoint, ImageDetail } from 'librechat-data-provider';
-import type { ConversationData } from 'librechat-data-provider';
+import { EModelEndpoint, ImageDetail } from 'company-local-ai-data-provider';
+import type { ConversationData } from 'company-local-ai-data-provider';
 
 const today = new Date();
 today.setDate(today.getDate() - 3);

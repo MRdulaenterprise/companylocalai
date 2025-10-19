@@ -1,7 +1,7 @@
 const express = require('express');
-const { logger } = require('@librechat/data-schemas');
-const { generateCheckAccess } = require('@librechat/api');
-const { PermissionTypes, Permissions } = require('librechat-data-provider');
+const { logger } = require('@company-local-ai/data-schemas');
+const { generateCheckAccess } = require('@company-local-ai/api');
+const { PermissionTypes, Permissions } = require('company-local-ai-data-provider');
 const {
   updateTagsForConversation,
   updateConversationTag,

@@ -1,4 +1,4 @@
-const { logger } = require('@librechat/data-schemas');
+const { logger } = require('@company-local-ai/data-schemas');
 
 function findContent(obj) {
   if (obj && typeof obj === 'object') {

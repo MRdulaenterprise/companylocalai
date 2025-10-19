@@ -1,6 +1,6 @@
-import { logger } from '@librechat/data-schemas';
-import { FileSources } from 'librechat-data-provider';
-import type { AppConfig } from '@librechat/data-schemas';
+import { logger } from '@company-local-ai/data-schemas';
+import { FileSources } from 'company-local-ai-data-provider';
+import type { AppConfig } from '@company-local-ai/data-schemas';
 import { initializeAzureBlobService } from '~/cdn/azure';
 import { initializeFirebase } from '~/cdn/firebase';
 import { initializeS3 } from '~/cdn/s3';

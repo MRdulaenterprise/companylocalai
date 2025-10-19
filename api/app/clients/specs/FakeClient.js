@@ -1,4 +1,4 @@
-const { getModelMaxTokens } = require('@librechat/api');
+const { getModelMaxTokens } = require('@company-local-ai/api');
 const BaseClient = require('../BaseClient');
 
 class FakeClient extends BaseClient {

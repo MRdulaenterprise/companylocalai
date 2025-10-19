@@ -1,4 +1,4 @@
-const { logger } = require('@librechat/data-schemas');
+const { logger } = require('@company-local-ai/data-schemas');
 const { ConversationSummaryBufferMemory, ChatMessageHistory } = require('langchain/memory');
 const { formatLangChainMessages, SUMMARY_PROMPT } = require('../prompts');
 const { predictNewSummary } = require('../chains');

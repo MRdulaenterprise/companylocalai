@@ -1,5 +1,5 @@
 const Anthropic = require('@anthropic-ai/sdk');
-const { logger } = require('@librechat/data-schemas');
+const { logger } = require('@company-local-ai/data-schemas');
 const { HttpsProxyAgent } = require('https-proxy-agent');
 const {
   Constants,
@@ -9,8 +9,8 @@ const {
   anthropicSettings,
   getResponseSender,
   validateVisionModel,
-} = require('librechat-data-provider');
-const { sleep, SplitStreamHandler: _Handler } = require('@librechat/agents');
+} = require('company-local-ai-data-provider');
+const { sleep, SplitStreamHandler: _Handler } = require('@company-local-ai/agents');
 const {
   Tokenizer,
   createFetch,
@@ -21,7 +21,7 @@ const {
   checkPromptCacheSupport,
   getModelMaxOutputTokens,
   createStreamEventHandlers,
-} = require('@librechat/api');
+} = require('@company-local-ai/api');
 const {
   truncateText,
   formatMessage,
@@ -255,7 +255,7 @@ class AnthropicClient extends BaseClient {
   }
 
   /**
-   * Get Token Count for LibreChat Message
+   * Get Token Count for Company Local AI Message
    * @param {TMessage} responseMessage
    * @returns {number}
    */

@@ -1,5 +1,5 @@
-const { isEnabled } = require('@librechat/api');
-const { Constants, ViolationTypes, Time } = require('librechat-data-provider');
+const { isEnabled } = require('@company-local-ai/api');
+const { Constants, ViolationTypes, Time } = require('company-local-ai-data-provider');
 const { searchConversation } = require('~/models/Conversation');
 const denyRequest = require('~/server/middleware/denyRequest');
 const { logViolation, getLogStores } = require('~/cache');

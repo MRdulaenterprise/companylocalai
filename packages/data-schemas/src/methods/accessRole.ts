@@ -1,4 +1,4 @@
-import { AccessRoleIds, ResourceType, PermissionBits } from 'librechat-data-provider';
+import { AccessRoleIds, ResourceType, PermissionBits } from 'company-local-ai-data-provider';
 import type { Model, Types, DeleteResult } from 'mongoose';
 import type { IAccessRole } from '~/types';
 import { RoleBits } from '~/common';

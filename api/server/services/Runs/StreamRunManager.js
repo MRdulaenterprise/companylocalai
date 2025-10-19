@@ -1,6 +1,6 @@
-const { sleep } = require('@librechat/agents');
-const { sendEvent } = require('@librechat/api');
-const { logger } = require('@librechat/data-schemas');
+const { sleep } = require('@company-local-ai/agents');
+const { sendEvent } = require('@company-local-ai/api');
+const { logger } = require('@company-local-ai/data-schemas');
 const {
   Constants,
   StepTypes,
@@ -8,7 +8,7 @@ const {
   ToolCallTypes,
   MessageContentTypes,
   AssistantStreamEvents,
-} = require('librechat-data-provider');
+} = require('company-local-ai-data-provider');
 const { retrieveAndProcessFile } = require('~/server/services/Files/process');
 const { processRequiredActions } = require('~/server/services/ToolService');
 const { processMessages } = require('~/server/services/Threads');

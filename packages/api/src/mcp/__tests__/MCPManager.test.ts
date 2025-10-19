@@ -1,4 +1,4 @@
-import { logger } from '@librechat/data-schemas';
+import { logger } from '@company-local-ai/data-schemas';
 import type * as t from '~/mcp/types';
 import { MCPManager } from '~/mcp/MCPManager';
 import { MCPServersRegistry } from '~/mcp/MCPServersRegistry';
@@ -6,7 +6,7 @@ import { ConnectionsRepository } from '~/mcp/ConnectionsRepository';
 import { MCPConnection } from '../connection';
 
 // Mock external dependencies
-jest.mock('@librechat/data-schemas', () => ({
+jest.mock('@company-local-ai/data-schemas', () => ({
   logger: {
     info: jest.fn(),
     warn: jest.fn(),

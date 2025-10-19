@@ -1,25 +1,25 @@
 const { z } = require('zod');
 const { tool } = require('@langchain/core/tools');
-const { logger } = require('@librechat/data-schemas');
+const { logger } = require('@company-local-ai/data-schemas');
 const {
   Providers,
   StepTypes,
   GraphEvents,
   Constants: AgentConstants,
-} = require('@librechat/agents');
+} = require('@company-local-ai/agents');
 const {
   sendEvent,
   MCPOAuthHandler,
   normalizeServerName,
   convertWithResolvedRefs,
-} = require('@librechat/api');
+} = require('@company-local-ai/api');
 const {
   Time,
   CacheKeys,
   Constants,
   ContentTypes,
   isAssistantsEndpoint,
-} = require('librechat-data-provider');
+} = require('company-local-ai-data-provider');
 const { getMCPManager, getFlowStateManager, getOAuthReconnectionManager } = require('~/config');
 const { findToken, createToken, updateToken } = require('~/models');
 const { reinitMCPServer } = require('./Tools/mcp');
@@ -62,7 +62,7 @@ function createRunStepDeltaEmitter({ res, stepId, toolCall }) {
  */
 function createRunStepEmitter({ res, runId, stepId, toolCall, index }) {
   return function () {
-    /** @type {import('@librechat/agents').RunStep} */
+    /** @type {import('@company-local-ai/agents').RunStep} */
     const data = {
       runId: runId ?? Constants.USE_PRELIM_RESPONSE_MESSAGE_ID,
       id: stepId,
@@ -442,7 +442,7 @@ async function getMCPSetupData(userId) {
   }
 
   const mcpManager = getMCPManager(userId);
-  /** @type {Map<string, import('@librechat/api').MCPConnection>} */
+  /** @type {Map<string, import('@company-local-ai/api').MCPConnection>} */
   let appConnections = new Map();
   try {
     appConnections = (await mcpManager.appConnections?.getAll()) || new Map();

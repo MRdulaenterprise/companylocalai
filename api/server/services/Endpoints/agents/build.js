@@ -1,5 +1,5 @@
-const { logger } = require('@librechat/data-schemas');
-const { isAgentsEndpoint, removeNullishValues, Constants } = require('librechat-data-provider');
+const { logger } = require('@company-local-ai/data-schemas');
+const { isAgentsEndpoint, removeNullishValues, Constants } = require('company-local-ai-data-provider');
 const { loadAgent } = require('~/models/Agent');
 
 const buildOptions = (req, endpoint, parsedBody, endpointType) => {

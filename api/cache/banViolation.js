@@ -1,6 +1,6 @@
-const { logger } = require('@librechat/data-schemas');
-const { isEnabled, math } = require('@librechat/api');
-const { ViolationTypes } = require('librechat-data-provider');
+const { logger } = require('@company-local-ai/data-schemas');
+const { isEnabled, math } = require('@company-local-ai/api');
+const { ViolationTypes } = require('company-local-ai-data-provider');
 const { deleteAllUserSessions } = require('~/models');
 const { removePorts } = require('~/server/utils');
 const getLogStores = require('./getLogStores');

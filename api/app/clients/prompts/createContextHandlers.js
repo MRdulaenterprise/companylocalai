@@ -1,6 +1,6 @@
 const axios = require('axios');
-const { logger } = require('@librechat/data-schemas');
-const { isEnabled, generateShortLivedToken } = require('@librechat/api');
+const { logger } = require('@company-local-ai/data-schemas');
+const { isEnabled, generateShortLivedToken } = require('@company-local-ai/api');
 
 const footer = `Use the context as your learned knowledge to better answer the user.
 

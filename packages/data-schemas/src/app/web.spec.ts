@@ -1,5 +1,5 @@
-import { SafeSearchTypes, SearchProviders, ScraperProviders } from 'librechat-data-provider';
-import type { TCustomConfig } from 'librechat-data-provider';
+import { SafeSearchTypes, SearchProviders, ScraperProviders } from 'company-local-ai-data-provider';
+import type { TCustomConfig } from 'company-local-ai-data-provider';
 import { loadWebSearchConfig } from './web';
 
 describe('loadWebSearchConfig', () => {

@@ -1,5 +1,5 @@
-import { SystemCategories } from 'librechat-data-provider';
-import type { IPromptGroupDocument as IPromptGroup } from '@librechat/data-schemas';
+import { SystemCategories } from 'company-local-ai-data-provider';
+import type { IPromptGroupDocument as IPromptGroup } from '@company-local-ai/data-schemas';
 import type { Types } from 'mongoose';
 import type { PromptGroupsListResponse } from '~/types';
 

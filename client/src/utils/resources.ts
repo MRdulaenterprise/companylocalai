@@ -1,4 +1,4 @@
-import { AccessRoleIds, ResourceType } from 'librechat-data-provider';
+import { AccessRoleIds, ResourceType } from 'company-local-ai-data-provider';
 
 export interface ResourceConfig {
   resourceType: ResourceType;

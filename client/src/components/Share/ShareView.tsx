@@ -1,8 +1,8 @@
 import { memo } from 'react';
-import { Spinner } from '@librechat/client';
+import { Spinner } from '@company-local-ai/client';
 import { useParams } from 'react-router-dom';
-import { buildTree } from 'librechat-data-provider';
-import { useGetSharedMessages } from 'librechat-data-provider/react-query';
+import { buildTree } from 'company-local-ai-data-provider';
+import { useGetSharedMessages } from 'company-local-ai-data-provider/react-query';
 import { useLocalize, useDocumentTitle } from '~/hooks';
 import { useGetStartupConfig } from '~/data-provider';
 import { ShareContext } from '~/Providers';

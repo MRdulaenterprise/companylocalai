@@ -1,12 +1,12 @@
 import React, { useMemo } from 'react';
 import { useRecoilValue } from 'recoil';
-import { OGDialog, OGDialogTemplate } from '@librechat/client';
+import { OGDialog, OGDialogTemplate } from '@company-local-ai/client';
 import {
   EToolResources,
   EModelEndpoint,
   defaultAgentCapabilities,
   isDocumentSupportedProvider,
-} from 'librechat-data-provider';
+} from 'company-local-ai-data-provider';
 import {
   ImageUpIcon,
   FileSearch,

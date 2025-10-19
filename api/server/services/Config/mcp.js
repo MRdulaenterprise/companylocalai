@@ -1,5 +1,5 @@
-const { logger } = require('@librechat/data-schemas');
-const { CacheKeys, Constants } = require('librechat-data-provider');
+const { logger } = require('@company-local-ai/data-schemas');
+const { CacheKeys, Constants } = require('company-local-ai-data-provider');
 const { getCachedTools, setCachedTools } = require('./getCachedTools');
 const { getLogStores } = require('~/cache');
 
@@ -41,7 +41,7 @@ async function updateMCPServerTools({ serverName, tools }) {
 
 /**
  * Merges app-level tools with global tools
- * @param {import('@librechat/api').LCAvailableTools} appTools
+ * @param {import('@company-local-ai/api').LCAvailableTools} appTools
  * @returns {Promise<void>}
  */
 async function mergeAppTools(appTools) {
@@ -66,7 +66,7 @@ async function mergeAppTools(appTools) {
  * Caches MCP server tools (no longer merges with global)
  * @param {object} params
  * @param {string} params.serverName
- * @param {import('@librechat/api').LCAvailableTools} params.serverTools
+ * @param {import('@company-local-ai/api').LCAvailableTools} params.serverTools
  * @returns {Promise<void>}
  */
 async function cacheMCPServerTools({ serverName, serverTools }) {

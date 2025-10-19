@@ -12,12 +12,12 @@ import {
   Label,
   OGDialogTrigger,
   Spinner,
-} from '@librechat/client';
-import { EModelEndpoint, alternateName, isAssistantsEndpoint } from 'librechat-data-provider';
+} from '@company-local-ai/client';
+import { EModelEndpoint, alternateName, isAssistantsEndpoint } from 'company-local-ai-data-provider';
 import {
   useRevokeAllUserKeysMutation,
   useRevokeUserKeyMutation,
-} from 'librechat-data-provider/react-query';
+} from 'company-local-ai-data-provider/react-query';
 import type { TDialogProps } from '~/common';
 import { useGetEndpointsQuery } from '~/data-provider';
 import { useUserKey, useLocalize } from '~/hooks';

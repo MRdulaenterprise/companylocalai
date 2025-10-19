@@ -1,11 +1,11 @@
-const { handleError } = require('@librechat/api');
-const { logger } = require('@librechat/data-schemas');
+const { handleError } = require('@company-local-ai/api');
+const { logger } = require('@company-local-ai/data-schemas');
 const {
   EndpointURLs,
   EModelEndpoint,
   isAgentsEndpoint,
   parseCompactConvo,
-} = require('librechat-data-provider');
+} = require('company-local-ai-data-provider');
 const azureAssistants = require('~/server/services/Endpoints/azureAssistants');
 const assistants = require('~/server/services/Endpoints/assistants');
 const { processFiles } = require('~/server/services/Files/process');

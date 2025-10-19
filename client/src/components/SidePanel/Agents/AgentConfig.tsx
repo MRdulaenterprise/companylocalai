@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import { useToastContext } from '@librechat/client';
-import { EModelEndpoint } from 'librechat-data-provider';
+import { useToastContext } from '@company-local-ai/client';
+import { EModelEndpoint } from 'company-local-ai-data-provider';
 import { Controller, useWatch, useFormContext } from 'react-hook-form';
 import type { AgentForm, AgentPanelProps, IconComponentTypes } from '~/common';
 import {

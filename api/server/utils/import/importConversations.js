@@ -1,5 +1,5 @@
 const fs = require('fs').promises;
-const { logger } = require('@librechat/data-schemas');
+const { logger } = require('@company-local-ai/data-schemas');
 const { getImporter } = require('./importers');
 
 /**

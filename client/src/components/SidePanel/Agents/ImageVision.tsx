@@ -1,5 +1,5 @@
-import { Checkbox } from '@librechat/client';
-import { Capabilities } from 'librechat-data-provider';
+import { Checkbox } from '@company-local-ai/client';
+import { Capabilities } from 'company-local-ai-data-provider';
 import { useFormContext, Controller } from 'react-hook-form';
 import type { AgentForm } from '~/common';
 import { useLocalize } from '~/hooks';

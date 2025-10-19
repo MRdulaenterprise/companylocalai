@@ -1,4 +1,4 @@
-import type { IMongoFile } from '@librechat/data-schemas';
+import type { IMongoFile } from '@company-local-ai/data-schemas';
 import type { ServerRequest } from './http';
 import type { Readable } from 'stream';
 import type { Request } from 'express';

@@ -1,13 +1,13 @@
 const { nanoid } = require('nanoid');
-const { checkAccess } = require('@librechat/api');
-const { logger } = require('@librechat/data-schemas');
+const { checkAccess } = require('@company-local-ai/api');
+const { logger } = require('@company-local-ai/data-schemas');
 const {
   Tools,
   Permissions,
   FileSources,
   EModelEndpoint,
   PermissionTypes,
-} = require('librechat-data-provider');
+} = require('company-local-ai-data-provider');
 const { getRoleByName } = require('~/models/Role');
 const { Files } = require('~/models');
 

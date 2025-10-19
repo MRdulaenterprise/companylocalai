@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { PermissionTypes, Permissions } from 'librechat-data-provider';
+import { PermissionTypes, Permissions } from 'company-local-ai-data-provider';
 import {
   OGDialog,
   OGDialogTemplate,
@@ -8,8 +8,8 @@ import {
   Input,
   Spinner,
   useToastContext,
-} from '@librechat/client';
-import type { TUserMemory } from 'librechat-data-provider';
+} from '@company-local-ai/client';
+import type { TUserMemory } from 'company-local-ai-data-provider';
 import { useUpdateMemoryMutation, useMemoriesQuery } from '~/data-provider';
 import { useLocalize, useHasAccess } from '~/hooks';
 

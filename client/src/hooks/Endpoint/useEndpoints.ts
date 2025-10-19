@@ -1,18 +1,18 @@
 import React, { useMemo, useCallback } from 'react';
-import { useGetModelsQuery } from 'librechat-data-provider/react-query';
+import { useGetModelsQuery } from 'company-local-ai-data-provider/react-query';
 import {
   Permissions,
   alternateName,
   EModelEndpoint,
   PermissionTypes,
-} from 'librechat-data-provider';
+} from 'company-local-ai-data-provider';
 import type {
   TEndpointsConfig,
   TAssistantsMap,
   TStartupConfig,
   Assistant,
   Agent,
-} from 'librechat-data-provider';
+} from 'company-local-ai-data-provider';
 import type { Endpoint } from '~/common';
 import { mapEndpoints, getIconKey, getEndpointField } from '~/utils';
 import { useGetEndpointsQuery } from '~/data-provider';

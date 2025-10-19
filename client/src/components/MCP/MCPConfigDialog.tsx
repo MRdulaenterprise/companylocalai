@@ -6,8 +6,8 @@ import {
   OGDialogTitle,
   OGDialogHeader,
   OGDialogContent,
-} from '@librechat/client';
-import type { MCPServerStatus } from 'librechat-data-provider';
+} from '@company-local-ai/client';
+import type { MCPServerStatus } from 'company-local-ai-data-provider';
 import type { ConfigFieldDetail } from '~/common';
 import ServerInitializationSection from './ServerInitializationSection';
 import CustomUserVarsSection from './CustomUserVarsSection';

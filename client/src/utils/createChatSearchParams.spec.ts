@@ -1,5 +1,5 @@
-import { EModelEndpoint, Constants } from 'librechat-data-provider';
-import type { TConversation, TPreset } from 'librechat-data-provider';
+import { EModelEndpoint, Constants } from 'company-local-ai-data-provider';
+import type { TConversation, TPreset } from 'company-local-ai-data-provider';
 import createChatSearchParams from './createChatSearchParams';
 
 describe('createChatSearchParams', () => {

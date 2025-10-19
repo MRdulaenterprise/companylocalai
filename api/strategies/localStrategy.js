@@ -1,6 +1,6 @@
-const { logger } = require('@librechat/data-schemas');
-const { errorsToString } = require('librechat-data-provider');
-const { isEnabled, checkEmailConfig } = require('@librechat/api');
+const { logger } = require('@company-local-ai/data-schemas');
+const { errorsToString } = require('company-local-ai-data-provider');
+const { isEnabled, checkEmailConfig } = require('@company-local-ai/api');
 const { Strategy: PassportLocalStrategy } = require('passport-local');
 const { findUser, comparePassword, updateUser } = require('~/models');
 const { loginSchema } = require('./validators');

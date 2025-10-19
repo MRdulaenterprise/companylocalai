@@ -1,6 +1,6 @@
 const axios = require('axios');
-const { logger } = require('@librechat/data-schemas');
-const { EModelEndpoint, defaultModels } = require('librechat-data-provider');
+const { logger } = require('@company-local-ai/data-schemas');
+const { EModelEndpoint, defaultModels } = require('company-local-ai-data-provider');
 
 const {
   fetchModels,
@@ -11,8 +11,8 @@ const {
   getAnthropicModels,
 } = require('./ModelService');
 
-jest.mock('@librechat/api', () => {
-  const originalUtils = jest.requireActual('@librechat/api');
+jest.mock('@company-local-ai/api', () => {
+  const originalUtils = jest.requireActual('@company-local-ai/api');
   return {
     ...originalUtils,
     processModelData: jest.fn((...args) => {
@@ -28,8 +28,8 @@ jest.mock('~/cache/getLogStores', () =>
     set: jest.fn().mockResolvedValue(true),
   })),
 );
-jest.mock('@librechat/data-schemas', () => ({
-  ...jest.requireActual('@librechat/data-schemas'),
+jest.mock('@company-local-ai/data-schemas', () => ({
+  ...jest.requireActual('@company-local-ai/data-schemas'),
   logger: {
     error: jest.fn(),
   },
@@ -108,7 +108,7 @@ describe('fetchModels with createTokenConfig true', () => {
 
   beforeEach(() => {
     // Clears the mock's history before each test
-    const _utils = require('@librechat/api');
+    const _utils = require('@company-local-ai/api');
     axios.get.mockResolvedValue({ data });
   });
 
@@ -120,7 +120,7 @@ describe('fetchModels with createTokenConfig true', () => {
       createTokenConfig: true,
     });
 
-    const { processModelData } = require('@librechat/api');
+    const { processModelData } = require('@company-local-ai/api');
     expect(processModelData).toHaveBeenCalled();
     expect(processModelData).toHaveBeenCalledWith(data);
   });
@@ -188,8 +188,8 @@ describe('getOpenAIModels with mocked config', () => {
         userProvidedOpenAI: true,
       },
     }));
-    jest.mock('librechat-data-provider', () => {
-      const original = jest.requireActual('librechat-data-provider');
+    jest.mock('company-local-ai-data-provider', () => {
+      const original = jest.requireActual('company-local-ai-data-provider');
       return {
         ...original,
         defaultModels: {

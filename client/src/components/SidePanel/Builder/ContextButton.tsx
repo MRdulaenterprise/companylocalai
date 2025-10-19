@@ -5,8 +5,8 @@ import {
   DialogTemplate,
   useToastContext,
   TrashIcon,
-} from '@librechat/client';
-import type { Assistant, AssistantCreateParams, AssistantsEndpoint } from 'librechat-data-provider';
+} from '@company-local-ai/client';
+import type { Assistant, AssistantCreateParams, AssistantsEndpoint } from 'company-local-ai-data-provider';
 import type { UseMutationResult } from '@tanstack/react-query';
 import { useDeleteAssistantMutation } from '~/data-provider';
 import { useLocalize, useSetIndexOptions } from '~/hooks';

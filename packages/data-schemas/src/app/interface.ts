@@ -1,5 +1,5 @@
-import { removeNullishValues } from 'librechat-data-provider';
-import type { TCustomConfig, TConfigDefaults } from 'librechat-data-provider';
+import { removeNullishValues } from 'company-local-ai-data-provider';
+import type { TCustomConfig, TConfigDefaults } from 'company-local-ai-data-provider';
 import type { AppConfig } from '~/types/app';
 import { isMemoryEnabled } from './memory';
 

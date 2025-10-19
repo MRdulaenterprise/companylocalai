@@ -1,9 +1,9 @@
-const { FileSources } = require('librechat-data-provider');
+const { FileSources } = require('company-local-ai-data-provider');
 const {
   uploadMistralOCR,
   uploadAzureMistralOCR,
   uploadGoogleVertexMistralOCR,
-} = require('@librechat/api');
+} = require('@company-local-ai/api');
 const {
   getFirebaseURL,
   prepareImageURL,

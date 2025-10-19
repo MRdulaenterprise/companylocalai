@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Link } from 'lucide-react';
 import { useQueryClient } from '@tanstack/react-query';
-import { OGDialog, OGDialogContent, Button, useToastContext } from '@librechat/client';
+import { OGDialog, OGDialogContent, Button, useToastContext } from '@company-local-ai/client';
 import {
   QueryKeys,
   Constants,
@@ -9,8 +9,8 @@ import {
   PermissionBits,
   LocalStorageKeys,
   AgentListResponse,
-} from 'librechat-data-provider';
-import type t from 'librechat-data-provider';
+} from 'company-local-ai-data-provider';
+import type t from 'company-local-ai-data-provider';
 import { useLocalize, useDefaultConvo } from '~/hooks';
 import { useChatContext } from '~/Providers';
 import { renderAgentAvatar } from '~/utils';

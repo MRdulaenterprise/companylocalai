@@ -1,7 +1,7 @@
-import { logger } from '@librechat/data-schemas';
-import { EModelEndpoint, removeNullishValues } from 'librechat-data-provider';
-import type { TCustomConfig, TEndpoint, TTransactionsConfig } from 'librechat-data-provider';
-import type { AppConfig } from '@librechat/data-schemas';
+import { logger } from '@company-local-ai/data-schemas';
+import { EModelEndpoint, removeNullishValues } from 'company-local-ai-data-provider';
+import type { TCustomConfig, TEndpoint, TTransactionsConfig } from 'company-local-ai-data-provider';
+import type { AppConfig } from '@company-local-ai/data-schemas';
 import { isEnabled, normalizeEndpointName } from '~/utils';
 
 /**

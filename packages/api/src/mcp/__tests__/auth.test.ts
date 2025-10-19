@@ -1,5 +1,5 @@
-import type { PluginAuthMethods } from '@librechat/data-schemas';
-import type { GenericTool } from '@librechat/agents';
+import type { PluginAuthMethods } from '@company-local-ai/data-schemas';
+import type { GenericTool } from '@company-local-ai/agents';
 import { getPluginAuthMap } from '~/agents/auth';
 import { getUserMCPAuthMap } from '../auth';
 

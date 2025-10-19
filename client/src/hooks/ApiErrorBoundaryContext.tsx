@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TError } from 'librechat-data-provider';
+import { TError } from 'company-local-ai-data-provider';
 
 type ProviderValue = {
   error?: TError;

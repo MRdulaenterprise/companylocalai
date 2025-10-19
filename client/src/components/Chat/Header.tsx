@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
-import { useMediaQuery } from '@librechat/client';
+import { useMediaQuery } from '@company-local-ai/client';
 import { useOutletContext } from 'react-router-dom';
-import { getConfigDefaults, PermissionTypes, Permissions } from 'librechat-data-provider';
+import { getConfigDefaults, PermissionTypes, Permissions } from 'company-local-ai-data-provider';
 import type { ContextType } from '~/common';
 import ModelSelector from './Menus/Endpoints/ModelSelector';
 import { PresetsMenu, HeaderNewChat, OpenSidebar } from './Menus';

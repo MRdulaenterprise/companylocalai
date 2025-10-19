@@ -1,5 +1,5 @@
 const express = require('express');
-const { isEnabled } = require('@librechat/api');
+const { isEnabled } = require('@company-local-ai/api');
 const {
   uaParser,
   checkBan,

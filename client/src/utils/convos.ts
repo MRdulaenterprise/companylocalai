@@ -9,8 +9,8 @@ import {
   isWithinInterval,
 } from 'date-fns';
 import { QueryClient } from '@tanstack/react-query';
-import { EModelEndpoint, LocalStorageKeys, QueryKeys } from 'librechat-data-provider';
-import type { TConversation, GroupedConversations } from 'librechat-data-provider';
+import { EModelEndpoint, LocalStorageKeys, QueryKeys } from 'company-local-ai-data-provider';
+import type { TConversation, GroupedConversations } from 'company-local-ai-data-provider';
 import type { InfiniteData } from '@tanstack/react-query';
 
 // Date group helpers

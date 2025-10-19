@@ -1,5 +1,5 @@
-import { parseConvo } from 'librechat-data-provider';
-import type { TPreset } from 'librechat-data-provider';
+import { parseConvo } from 'company-local-ai-data-provider';
+import type { TPreset } from 'company-local-ai-data-provider';
 
 type UIPreset = Partial<TPreset> & { presetOverride?: Partial<TPreset> };
 type TCleanupPreset = {

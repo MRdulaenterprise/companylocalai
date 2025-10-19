@@ -1,4 +1,4 @@
-import { logger } from '@librechat/data-schemas';
+import { logger } from '@company-local-ai/data-schemas';
 
 /**
  * Processes text content by counting tokens and truncating if it exceeds the specified limit.

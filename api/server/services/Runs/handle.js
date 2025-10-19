@@ -1,6 +1,6 @@
-const { sleep } = require('@librechat/agents');
-const { logger } = require('@librechat/data-schemas');
-const { RunStatus, defaultOrderQuery, CacheKeys } = require('librechat-data-provider');
+const { sleep } = require('@company-local-ai/agents');
+const { logger } = require('@company-local-ai/data-schemas');
+const { RunStatus, defaultOrderQuery, CacheKeys } = require('company-local-ai-data-provider');
 const getLogStores = require('~/cache/getLogStores');
 const { retrieveRun } = require('./methods');
 const RunManager = require('./RunManager');

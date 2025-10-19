@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import { Constants } from 'librechat-data-provider';
-import type { TPlugin } from 'librechat-data-provider';
+import { Constants } from 'company-local-ai-data-provider';
+import type { TPlugin } from 'company-local-ai-data-provider';
 import type { MCPServerInfo } from '~/common';
 
 interface VisibleToolsResult {
@@ -10,10 +10,10 @@ interface VisibleToolsResult {
 
 /**
  * Custom hook to calculate visible tool IDs based on selected tools.
- * Separates regular LibreChat tools from MCP servers.
+ * Separates regular Company Local AI tools from MCP servers.
  *
  * @param selectedToolIds - Array of selected tool IDs
- * @param regularTools - Array of regular LibreChat tools
+ * @param regularTools - Array of regular Company Local AI tools
  * @param mcpServersMap - Map of all MCP servers
  * @returns Object containing separate arrays of visible tool IDs for regular and MCP tools
  */
@@ -38,7 +38,7 @@ export function useVisibleTools(
       else if (mcpServersMap.has(toolId)) {
         mcpServers.add(toolId);
       }
-      // Regular LibreChat tools
+      // Regular Company Local AI tools
       else if (regularTools?.some((t) => t.pluginKey === toolId)) {
         regularToolIds.push(toolId);
       }

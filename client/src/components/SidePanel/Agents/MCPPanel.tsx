@@ -5,7 +5,7 @@ import {
   AuthTypeEnum,
   AuthorizationTypeEnum,
   TokenExchangeMethodEnum,
-} from 'librechat-data-provider';
+} from 'company-local-ai-data-provider';
 import {
   Label,
   OGDialog,
@@ -13,7 +13,7 @@ import {
   OGDialogTrigger,
   useToastContext,
   OGDialogTemplate,
-} from '@librechat/client';
+} from '@company-local-ai/client';
 import type { MCPForm } from '~/common';
 import { useAgentPanelContext } from '~/Providers/AgentPanelContext';
 import { defaultMCPFormValues } from '~/common/mcp';

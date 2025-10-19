@@ -1,5 +1,5 @@
 const { HttpsProxyAgent } = require('https-proxy-agent');
-const { createHandleLLMNewToken } = require('@librechat/api');
+const { createHandleLLMNewToken } = require('@company-local-ai/api');
 const {
   AuthType,
   Constants,
@@ -7,7 +7,7 @@ const {
   bedrockInputParser,
   bedrockOutputParser,
   removeNullishValues,
-} = require('librechat-data-provider');
+} = require('company-local-ai-data-provider');
 const { getUserKey, checkUserKeyExpiry } = require('~/server/services/UserService');
 
 const getOptions = async ({ req, overrideModel, endpointOption }) => {

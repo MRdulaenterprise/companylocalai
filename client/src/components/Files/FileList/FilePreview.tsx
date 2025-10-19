@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { TFile } from 'librechat-data-provider/dist/types';
-import { CheckMark, TrashIcon, Button } from '@librechat/client';
+import { TFile } from 'company-local-ai-data-provider/dist/types';
+import { CheckMark, TrashIcon, Button } from '@company-local-ai/client';
 import VectorStoreButton from '../VectorStore/VectorStoreButton';
 import { CircleIcon, Clock3Icon, InfoIcon } from 'lucide-react';
 import DeleteIconButton from '../DeleteIconButton';

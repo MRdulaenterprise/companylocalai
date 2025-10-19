@@ -59,12 +59,12 @@ spec:
                 name: {{ .Values.postgresql.auth.existingSecret }}
                 key: {{ .Values.postgresql.auth.secretKeys.userPasswordKey }}
           {{- end }}
-          {{- if .Values.global.librechat.existingSecretName }}
+          {{- if .Values.global.company-local-ai.existingSecretName }}
           - name: OPENAI_API_KEY
             valueFrom:
               secretKeyRef:
-                name: {{ .Values.global.librechat.existingSecretName }}
-                key: {{ .Values.global.librechat.existingSecretApiKey }}
+                name: {{ .Values.global.company-local-ai.existingSecretName }}
+                key: {{ .Values.global.company-local-ai.existingSecretApiKey }}
                 optional: true
           {{- end }}
           {{- with .Values.volumeMounts }}

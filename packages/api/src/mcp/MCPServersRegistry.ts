@@ -1,7 +1,7 @@
 import mapValues from 'lodash/mapValues';
-import { logger } from '@librechat/data-schemas';
-import { Constants } from 'librechat-data-provider';
-import type { JsonSchemaType } from '@librechat/data-schemas';
+import { logger } from '@company-local-ai/data-schemas';
+import { Constants } from 'company-local-ai-data-provider';
+import type { JsonSchemaType } from '@company-local-ai/data-schemas';
 import type { MCPConnection } from '~/mcp/connection';
 import type * as t from '~/mcp/types';
 import { ConnectionsRepository } from '~/mcp/ConnectionsRepository';
@@ -143,7 +143,7 @@ export class MCPServersRegistry {
     this.logUpdatedConfig(serverName, duration);
   }
 
-  /** Converts server tools to LibreChat-compatible tool functions format */
+  /** Converts server tools to Company Local AI-compatible tool functions format */
   public async getToolFunctions(
     serverName: string,
     conn: MCPConnection,

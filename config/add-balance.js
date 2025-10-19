@@ -1,7 +1,7 @@
 const path = require('path');
 const mongoose = require('mongoose');
-const { isEnabled, getBalanceConfig } = require('@librechat/api');
-const { User } = require('@librechat/data-schemas').createModels(mongoose);
+const { isEnabled, getBalanceConfig } = require('@company-local-ai/api');
+const { User } = require('@company-local-ai/data-schemas').createModels(mongoose);
 require('module-alias')({ base: path.resolve(__dirname, '..', 'api') });
 const { createTransaction } = require('~/models/Transaction');
 const { getAppConfig } = require('~/server/services/Config');

@@ -1,5 +1,5 @@
-const { CacheKeys } = require('librechat-data-provider');
-const { logger, AppService } = require('@librechat/data-schemas');
+const { CacheKeys } = require('company-local-ai-data-provider');
+const { logger, AppService } = require('@company-local-ai/data-schemas');
 const { loadAndFormatTools } = require('~/server/services/start/tools');
 const loadCustomConfig = require('./loadCustomConfig');
 const { setCachedTools } = require('./getCachedTools');

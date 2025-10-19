@@ -3,11 +3,11 @@ import {
   EModelEndpoint,
   validateAzureGroups,
   mapModelToAzureConfig,
-} from 'librechat-data-provider';
-import type { TCustomConfig, TAzureConfig } from 'librechat-data-provider';
+} from 'company-local-ai-data-provider';
+import type { TCustomConfig, TAzureConfig } from 'company-local-ai-data-provider';
 
 /**
- * Sets up the Azure OpenAI configuration from the config (`librechat.yaml`) file.
+ * Sets up the Azure OpenAI configuration from the config (`company-local-ai.yaml`) file.
  * @param config - The loaded custom configuration.
  * @returns The Azure OpenAI configuration.
  */

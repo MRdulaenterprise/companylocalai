@@ -5,14 +5,14 @@ import { useRecoilValue } from 'recoil';
 import { Menu, Rocket } from 'lucide-react';
 import { useParams } from 'react-router-dom';
 import { useForm, FormProvider } from 'react-hook-form';
-import { Button, Skeleton, useToastContext } from '@librechat/client';
+import { Button, Skeleton, useToastContext } from '@company-local-ai/client';
 import {
   Permissions,
   ResourceType,
   PermissionBits,
   PermissionTypes,
-} from 'librechat-data-provider';
-import type { TCreatePrompt, TPrompt, TPromptGroup } from 'librechat-data-provider';
+} from 'company-local-ai-data-provider';
+import type { TCreatePrompt, TPrompt, TPromptGroup } from 'company-local-ai-data-provider';
 import {
   useGetPrompts,
   useGetPromptGroup,

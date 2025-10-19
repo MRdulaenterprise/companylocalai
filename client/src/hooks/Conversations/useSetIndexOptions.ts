@@ -5,7 +5,7 @@ import {
   TConversation,
   tConvoUpdateSchema,
   EModelEndpoint,
-} from 'librechat-data-provider';
+} from 'company-local-ai-data-provider';
 import type { TSetExample, TSetOption, TSetOptionsPayload } from '~/common';
 import usePresetIndexOptions from './usePresetIndexOptions';
 import { useChatContext } from '~/Providers/ChatContext';

@@ -1,6 +1,6 @@
-const { logger } = require('@librechat/data-schemas');
+const { logger } = require('@company-local-ai/data-schemas');
 const { HttpsProxyAgent } = require('https-proxy-agent');
-const { sleep, SplitStreamHandler, CustomOpenAIClient: OpenAI } = require('@librechat/agents');
+const { sleep, SplitStreamHandler, CustomOpenAIClient: OpenAI } = require('@company-local-ai/agents');
 const {
   isEnabled,
   Tokenizer,
@@ -11,7 +11,7 @@ const {
   genAzureChatCompletion,
   getModelMaxOutputTokens,
   createStreamEventHandlers,
-} = require('@librechat/api');
+} = require('@company-local-ai/api');
 const {
   Constants,
   ImageDetail,
@@ -25,7 +25,7 @@ const {
   getResponseSender,
   validateVisionModel,
   mapModelToAzureConfig,
-} = require('librechat-data-provider');
+} = require('company-local-ai-data-provider');
 const {
   truncateText,
   formatMessage,
@@ -1079,8 +1079,8 @@ ${convo}
 
       if (this.useOpenRouter) {
         opts.defaultHeaders = {
-          'HTTP-Referer': 'https://librechat.ai',
-          'X-Title': 'LibreChat',
+          'HTTP-Referer': 'https://company-local-ai.ai',
+          'X-Title': 'Company Local AI',
         };
       }
 

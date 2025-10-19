@@ -1,7 +1,7 @@
 const axios = require('axios');
 const deriveBaseURL = require('./deriveBaseURL');
-jest.mock('@librechat/api', () => {
-  const originalUtils = jest.requireActual('@librechat/api');
+jest.mock('@company-local-ai/api', () => {
+  const originalUtils = jest.requireActual('@company-local-ai/api');
   return {
     ...originalUtils,
     processModelData: jest.fn((...args) => {

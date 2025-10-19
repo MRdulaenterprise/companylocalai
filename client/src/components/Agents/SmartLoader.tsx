@@ -1,4 +1,4 @@
-import { AgentListResponse } from 'librechat-data-provider';
+import { AgentListResponse } from 'company-local-ai-data-provider';
 import React, { useState, useEffect } from 'react';
 
 interface SmartLoaderProps {

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Copy, CopyCheck } from 'lucide-react';
 import { useFormContext } from 'react-hook-form';
-import { AuthTypeEnum } from 'librechat-data-provider';
-import { Button, useToastContext } from '@librechat/client';
+import { AuthTypeEnum } from 'company-local-ai-data-provider';
+import { Button, useToastContext } from '@company-local-ai/client';
 import { useLocalize, useCopyToClipboard } from '~/hooks';
 import { cn } from '~/utils';
 

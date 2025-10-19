@@ -1,7 +1,7 @@
-import { logger } from '@librechat/data-schemas';
-import { FileSources, mergeFileConfig } from 'librechat-data-provider';
-import type { fileConfigSchema } from 'librechat-data-provider';
-import type { IMongoFile } from '@librechat/data-schemas';
+import { logger } from '@company-local-ai/data-schemas';
+import { FileSources, mergeFileConfig } from 'company-local-ai-data-provider';
+import type { fileConfigSchema } from 'company-local-ai-data-provider';
+import type { IMongoFile } from '@company-local-ai/data-schemas';
 import type { z } from 'zod';
 import { processTextWithTokenLimit } from '~/utils/text';
 

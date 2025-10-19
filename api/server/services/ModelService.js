@@ -1,9 +1,9 @@
 const axios = require('axios');
-const { Providers } = require('@librechat/agents');
-const { logger } = require('@librechat/data-schemas');
+const { Providers } = require('@company-local-ai/agents');
+const { logger } = require('@company-local-ai/data-schemas');
 const { HttpsProxyAgent } = require('https-proxy-agent');
-const { logAxiosError, inputSchema, processModelData } = require('@librechat/api');
-const { EModelEndpoint, defaultModels, CacheKeys } = require('librechat-data-provider');
+const { logAxiosError, inputSchema, processModelData } = require('@company-local-ai/api');
+const { EModelEndpoint, defaultModels, CacheKeys } = require('company-local-ai-data-provider');
 const { OllamaClient } = require('~/app/clients/OllamaClient');
 const { isUserProvided } = require('~/server/utils');
 const getLogStores = require('~/cache/getLogStores');

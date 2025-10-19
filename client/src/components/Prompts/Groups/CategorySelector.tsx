@@ -1,10 +1,10 @@
 import React, { useMemo, useState } from 'react';
 import * as Ariakit from '@ariakit/react';
 import { useTranslation } from 'react-i18next';
-import { DropdownPopup } from '@librechat/client';
-import { LocalStorageKeys } from 'librechat-data-provider';
+import { DropdownPopup } from '@company-local-ai/client';
+import { LocalStorageKeys } from 'company-local-ai-data-provider';
 import { useFormContext, Controller } from 'react-hook-form';
-import type { MenuItemProps } from '@librechat/client';
+import type { MenuItemProps } from '@company-local-ai/client';
 import type { ReactNode } from 'react';
 import { usePromptGroupsContext } from '~/Providers';
 import { useCategories } from '~/hooks';

@@ -1,10 +1,10 @@
 const { z } = require('zod');
 const axios = require('axios');
 const { Ollama } = require('ollama');
-const { sleep } = require('@librechat/agents');
-const { logAxiosError } = require('@librechat/api');
-const { logger } = require('@librechat/data-schemas');
-const { Constants } = require('librechat-data-provider');
+const { sleep } = require('@company-local-ai/agents');
+const { logAxiosError } = require('@company-local-ai/api');
+const { logger } = require('@company-local-ai/data-schemas');
+const { Constants } = require('company-local-ai-data-provider');
 const { deriveBaseURL } = require('~/utils');
 
 const ollamaPayloadSchema = z.object({

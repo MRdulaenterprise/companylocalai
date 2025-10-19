@@ -1,5 +1,5 @@
 import { atomFamily, atomWithStorage } from 'jotai/utils';
-import { Constants, LocalStorageKeys } from 'librechat-data-provider';
+import { Constants, LocalStorageKeys } from 'company-local-ai-data-provider';
 
 /**
  * Creates a storage atom for MCP values per conversation

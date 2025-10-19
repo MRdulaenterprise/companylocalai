@@ -1,6 +1,6 @@
 import { useMemo, useCallback } from 'react';
-import { EModelEndpoint } from 'librechat-data-provider';
-import { useUserKeyQuery, useUpdateUserKeysMutation } from 'librechat-data-provider/react-query';
+import { EModelEndpoint } from 'company-local-ai-data-provider';
+import { useUserKeyQuery, useUpdateUserKeysMutation } from 'company-local-ai-data-provider/react-query';
 import { useGetEndpointsQuery } from '~/data-provider';
 
 const useUserKey = (endpoint: string) => {

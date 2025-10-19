@@ -1,6 +1,6 @@
-# LibreChat Data Schemas Package
+# Company Local AI Data Schemas Package
 
-This package provides the database schemas, models, types, and methods for LibreChat using Mongoose ODM.
+This package provides the database schemas, models, types, and methods for Company Local AI using Mongoose ODM.
 
 ## 📁 Package Structure
 

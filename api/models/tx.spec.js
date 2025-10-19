@@ -1,5 +1,5 @@
-const { maxTokensMap } = require('@librechat/api');
-const { EModelEndpoint } = require('librechat-data-provider');
+const { maxTokensMap } = require('@company-local-ai/api');
+const { EModelEndpoint } = require('company-local-ai-data-provider');
 const {
   defaultRate,
   tokenValues,

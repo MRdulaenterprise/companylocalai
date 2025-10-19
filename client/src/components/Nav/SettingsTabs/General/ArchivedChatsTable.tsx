@@ -14,8 +14,8 @@ import {
   DataTable,
   useToastContext,
   useMediaQuery,
-} from '@librechat/client';
-import type { ConversationListParams, TConversation } from 'librechat-data-provider';
+} from '@company-local-ai/client';
+import type { ConversationListParams, TConversation } from 'company-local-ai-data-provider';
 import {
   useArchiveConvoMutation,
   useConversationsInfiniteQuery,

@@ -1,4 +1,4 @@
-const { GLOBAL_PROJECT_NAME } = require('librechat-data-provider').Constants;
+const { GLOBAL_PROJECT_NAME } = require('company-local-ai-data-provider').Constants;
 const { Project } = require('~/db/models');
 
 /**

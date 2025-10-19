@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { Variable } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
-import { Separator } from '@librechat/client';
-import { specialVariables } from 'librechat-data-provider';
+import { Separator } from '@company-local-ai/client';
+import { specialVariables } from 'company-local-ai-data-provider';
 import { cn, extractUniqueVariables } from '~/utils';
 import { CodeVariableGfm } from './Markdown';
 import { useLocalize } from '~/hooks';

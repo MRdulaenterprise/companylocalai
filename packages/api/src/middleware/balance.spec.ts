@@ -1,12 +1,12 @@
 import mongoose from 'mongoose';
 import { MongoMemoryServer } from 'mongodb-memory-server';
-import { logger, balanceSchema } from '@librechat/data-schemas';
+import { logger, balanceSchema } from '@company-local-ai/data-schemas';
 import type { NextFunction, Request as ServerRequest, Response as ServerResponse } from 'express';
-import type { IBalance } from '@librechat/data-schemas';
+import type { IBalance } from '@company-local-ai/data-schemas';
 import { createSetBalanceConfig } from './balance';
 
-jest.mock('@librechat/data-schemas', () => ({
-  ...jest.requireActual('@librechat/data-schemas'),
+jest.mock('@company-local-ai/data-schemas', () => ({
+  ...jest.requireActual('@company-local-ai/data-schemas'),
   logger: {
     error: jest.fn(),
   },

@@ -1,7 +1,7 @@
 const initializeClient = require('./initialize');
 
-jest.mock('@librechat/api', () => ({
-  ...jest.requireActual('@librechat/api'),
+jest.mock('@company-local-ai/api', () => ({
+  ...jest.requireActual('@company-local-ai/api'),
   resolveHeaders: jest.fn(),
   getOpenAIConfig: jest.fn(),
   createHandleLLMNewToken: jest.fn(),
@@ -53,7 +53,7 @@ describe('custom/initializeClient', () => {
 
   beforeEach(() => {
     jest.clearAllMocks();
-    const { getCustomEndpointConfig, resolveHeaders, getOpenAIConfig } = require('@librechat/api');
+    const { getCustomEndpointConfig, resolveHeaders, getOpenAIConfig } = require('@company-local-ai/api');
     getCustomEndpointConfig.mockReturnValue({
       apiKey: 'test-key',
       baseURL: 'https://test.com',
@@ -71,7 +71,7 @@ describe('custom/initializeClient', () => {
   });
 
   it('calls resolveHeaders with headers, user, and body for body placeholder support', async () => {
-    const { resolveHeaders } = require('@librechat/api');
+    const { resolveHeaders } = require('@company-local-ai/api');
     await initializeClient({ req: mockRequest, res: mockResponse, optionsOnly: true });
     expect(resolveHeaders).toHaveBeenCalledWith({
       headers: { 'x-user': '{{LIBRECHAT_USER_ID}}', 'x-email': '{{LIBRECHAT_USER_EMAIL}}' },
@@ -84,7 +84,7 @@ describe('custom/initializeClient', () => {
   });
 
   it('throws if endpoint config is missing', async () => {
-    const { getCustomEndpointConfig } = require('@librechat/api');
+    const { getCustomEndpointConfig } = require('@company-local-ai/api');
     getCustomEndpointConfig.mockReturnValueOnce(null);
     await expect(
       initializeClient({ req: mockRequest, res: mockResponse, optionsOnly: true }),

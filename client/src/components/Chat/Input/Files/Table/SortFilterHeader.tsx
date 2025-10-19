@@ -8,7 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@librechat/client';
+} from '@company-local-ai/client';
 import { useLocalize, TranslationKeys } from '~/hooks';
 import { cn } from '~/utils';
 

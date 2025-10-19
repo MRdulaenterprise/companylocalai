@@ -5,7 +5,7 @@ import {
   SandpackProviderProps,
 } from '@codesandbox/sandpack-react/unstyled';
 import type { SandpackPreviewRef, PreviewProps } from '@codesandbox/sandpack-react/unstyled';
-import type { TStartupConfig } from 'librechat-data-provider';
+import type { TStartupConfig } from 'company-local-ai-data-provider';
 import type { ArtifactFiles } from '~/common';
 import { sharedFiles, sharedOptions } from '~/utils/artifacts';
 

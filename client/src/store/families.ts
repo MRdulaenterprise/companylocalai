@@ -10,8 +10,8 @@ import {
   useSetRecoilState,
   useRecoilCallback,
 } from 'recoil';
-import { LocalStorageKeys, Constants } from 'librechat-data-provider';
-import type { TMessage, TPreset, TConversation, TSubmission } from 'librechat-data-provider';
+import { LocalStorageKeys, Constants } from 'company-local-ai-data-provider';
+import type { TMessage, TPreset, TConversation, TSubmission } from 'company-local-ai-data-provider';
 import type { TOptionSettings, ExtendedFile } from '~/common';
 import { useSetConvoContext } from '~/Providers/SetConvoContext';
 import { storeEndpointSettings, logger, createChatSearchParams } from '~/utils';

@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { Dispatcher } from 'undici';
-import { anthropicSchema } from 'librechat-data-provider';
-import type { AnthropicClientOptions } from '@librechat/agents';
+import { anthropicSchema } from 'company-local-ai-data-provider';
+import type { AnthropicClientOptions } from '@company-local-ai/agents';
 import type { LLMConfigResult } from './openai';
 
 export type AnthropicParameters = z.infer<typeof anthropicSchema>;

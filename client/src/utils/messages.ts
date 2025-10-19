@@ -1,5 +1,5 @@
-import { ContentTypes } from 'librechat-data-provider';
-import type { TMessage, TMessageContentParts } from 'librechat-data-provider';
+import { ContentTypes } from 'company-local-ai-data-provider';
+import type { TMessage, TMessageContentParts } from 'company-local-ai-data-provider';
 
 export const TEXT_KEY_DIVIDER = '|||';
 

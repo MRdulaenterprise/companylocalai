@@ -1,11 +1,11 @@
 const express = require('express');
 const request = require('supertest');
-const { isEnabled } = require('@librechat/api');
+const { isEnabled } = require('@company-local-ai/api');
 const { getLdapConfig } = require('~/server/services/Config/ldap');
 
 jest.mock('~/server/services/Config/ldap');
-jest.mock('@librechat/api', () => ({
-  ...jest.requireActual('@librechat/api'),
+jest.mock('@company-local-ai/api', () => ({
+  ...jest.requireActual('@company-local-ai/api'),
   isEnabled: jest.fn(),
 }));
 

@@ -1,5 +1,5 @@
-import { EModelEndpoint } from 'librechat-data-provider';
-import type { TEndpointsConfig, TConfig } from 'librechat-data-provider';
+import { EModelEndpoint } from 'company-local-ai-data-provider';
+import type { TEndpointsConfig, TConfig } from 'company-local-ai-data-provider';
 import {
   getEndpointField,
   getAvailableEndpoints,

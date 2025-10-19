@@ -3,7 +3,7 @@ const {
   EModelEndpoint,
   defaultOrderQuery,
   defaultAssistantsVersion,
-} = require('librechat-data-provider');
+} = require('company-local-ai-data-provider');
 const {
   initializeClient: initAzureClient,
 } = require('~/server/services/Endpoints/azureAssistants');

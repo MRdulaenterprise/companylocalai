@@ -1,7 +1,7 @@
 {
-  "name": "@librechat/backend",
+  "name": "@company-local-ai/backend",
   "version": "v0.8.0",
-  "description": "",
+  "description": "Backend API for Company Local AI chat application",
   "scripts": {
     "start": "echo 'please run this from the root directory'",
     "server-dev": "echo 'please run this from the root directory'",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danny-avila/LibreChat.git"
+    "url": ""
   },
   "keywords": [],
   "author": "",
@@ -30,9 +30,9 @@
     "~/*": "./*"
   },
   "bugs": {
-    "url": "https://github.com/danny-avila/LibreChat/issues"
+    "url": ""
   },
-  "homepage": "https://librechat.ai",
+  "homepage": "",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.52.0",
     "@aws-sdk/client-s3": "^3.758.0",
@@ -48,9 +48,9 @@
     "@langchain/google-genai": "^0.2.13",
     "@langchain/google-vertexai": "^0.2.13",
     "@langchain/textsplitters": "^0.1.0",
-    "@librechat/agents": "^2.4.85",
-    "@librechat/api": "*",
-    "@librechat/data-schemas": "*",
+    "@company-local-ai/agents": "^2.4.85",
+    "@company-local-ai/api": "*",
+    "@company-local-ai/data-schemas": "*",
     "@microsoft/microsoft-graph-client": "^3.0.7",
     "@modelcontextprotocol/sdk": "^1.17.1",
     "@node-saml/passport-saml": "^5.1.0",
@@ -83,7 +83,7 @@
     "keyv": "^5.3.2",
     "keyv-file": "^5.1.2",
     "klona": "^2.0.6",
-    "librechat-data-provider": "*",
+    "company-local-ai-data-provider": "*",
     "lodash": "^4.17.21",
     "meilisearch": "^0.38.0",
     "memorystore": "^1.6.7",

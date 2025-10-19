@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState, useMemo, memo, lazy, Suspense, useRef } from 'react';
 import { useRecoilValue } from 'recoil';
-import { useMediaQuery } from '@librechat/client';
-import { PermissionTypes, Permissions } from 'librechat-data-provider';
-import type { ConversationListResponse } from 'librechat-data-provider';
+import { useMediaQuery } from '@company-local-ai/client';
+import { PermissionTypes, Permissions } from 'company-local-ai-data-provider';
+import type { ConversationListResponse } from 'company-local-ai-data-provider';
 import type { InfiniteQueryObserverResult } from '@tanstack/react-query';
 import {
   useLocalize,

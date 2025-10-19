@@ -1,4 +1,4 @@
-const { SystemRoles } = require('librechat-data-provider');
+const { SystemRoles } = require('company-local-ai-data-provider');
 
 function checkAdmin(req, res, next) {
   try {

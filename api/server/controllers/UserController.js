@@ -1,11 +1,11 @@
-const { logger, webSearchKeys } = require('@librechat/data-schemas');
-const { Tools, CacheKeys, Constants, FileSources } = require('librechat-data-provider');
+const { logger, webSearchKeys } = require('@company-local-ai/data-schemas');
+const { Tools, CacheKeys, Constants, FileSources } = require('company-local-ai-data-provider');
 const {
   MCPOAuthHandler,
   MCPTokenStorage,
   normalizeHttpError,
   extractWebSearchEnvVars,
-} = require('@librechat/api');
+} = require('@company-local-ai/api');
 const {
   getFiles,
   findToken,

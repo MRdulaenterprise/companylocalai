@@ -1,4 +1,4 @@
-import { HoverCardPortal, HoverCardContent } from '@librechat/client';
+import { HoverCardPortal, HoverCardContent } from '@company-local-ai/client';
 import './styles.module.css';
 
 type TPluginTooltipProps = {

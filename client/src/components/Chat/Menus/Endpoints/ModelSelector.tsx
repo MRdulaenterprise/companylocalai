@@ -17,7 +17,7 @@ function ModelSelectorContent() {
   const localize = useLocalize();
 
   const {
-    // LibreChat
+    // Company Local AI
     agentsMap,
     modelSpecs,
     mappedEndpoints,

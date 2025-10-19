@@ -1,5 +1,5 @@
-import { Providers } from '@librechat/agents';
-import { mbToBytes, isOpenAILikeProvider } from 'librechat-data-provider';
+import { Providers } from '@company-local-ai/agents';
+import { mbToBytes, isOpenAILikeProvider } from 'company-local-ai-data-provider';
 
 export interface PDFValidationResult {
   isValid: boolean;

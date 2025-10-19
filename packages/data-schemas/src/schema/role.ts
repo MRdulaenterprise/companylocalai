@@ -1,5 +1,5 @@
 import { Schema } from 'mongoose';
-import { PermissionTypes, Permissions } from 'librechat-data-provider';
+import { PermissionTypes, Permissions } from 'company-local-ai-data-provider';
 import type { IRole } from '~/types';
 
 /**

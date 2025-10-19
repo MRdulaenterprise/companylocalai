@@ -1,10 +1,10 @@
-const { getModelMaxTokens } = require('@librechat/api');
-const { createContentAggregator } = require('@librechat/agents');
+const { getModelMaxTokens } = require('@company-local-ai/api');
+const { createContentAggregator } = require('@company-local-ai/agents');
 const {
   EModelEndpoint,
   providerEndpointMap,
   getResponseSender,
-} = require('librechat-data-provider');
+} = require('company-local-ai-data-provider');
 const { getDefaultHandlers } = require('~/server/controllers/agents/callbacks');
 const getOptions = require('~/server/services/Endpoints/bedrock/options');
 const AgentClient = require('~/server/controllers/agents/client');

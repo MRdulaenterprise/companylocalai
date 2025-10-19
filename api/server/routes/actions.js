@@ -1,8 +1,8 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
-const { getAccessToken } = require('@librechat/api');
-const { logger } = require('@librechat/data-schemas');
-const { CacheKeys } = require('librechat-data-provider');
+const { getAccessToken } = require('@company-local-ai/api');
+const { logger } = require('@company-local-ai/data-schemas');
+const { CacheKeys } = require('company-local-ai-data-provider');
 const { findToken, updateToken, createToken } = require('~/models');
 const { getFlowStateManager } = require('~/config');
 const { getLogStores } = require('~/cache');

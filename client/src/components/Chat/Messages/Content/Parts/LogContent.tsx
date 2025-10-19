@@ -1,7 +1,7 @@
 import { isAfter } from 'date-fns';
 import React, { useMemo } from 'react';
-import { imageExtRegex } from 'librechat-data-provider';
-import type { TFile, TAttachment, TAttachmentMetadata } from 'librechat-data-provider';
+import { imageExtRegex } from 'company-local-ai-data-provider';
+import type { TFile, TAttachment, TAttachmentMetadata } from 'company-local-ai-data-provider';
 import Image from '~/components/Chat/Messages/Content/Image';
 import { useLocalize } from '~/hooks';
 import LogLink from './LogLink';

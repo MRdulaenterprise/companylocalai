@@ -1,7 +1,7 @@
 {
-  "name": "LibreChat",
+  "name": "company-local-ai",
   "version": "v0.8.0",
-  "description": "",
+  "description": "A customizable AI chat application template for organizations",
   "workspaces": [
     "api",
     "client",
@@ -86,14 +86,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danny-avila/LibreChat.git"
+    "url": ""
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/danny-avila/LibreChat/issues"
+    "url": ""
   },
-  "homepage": "https://librechat.ai/",
+  "homepage": "",
   "devDependencies": {
     "@axe-core/playwright": "^4.10.1",
     "@eslint/compat": "^1.2.6",

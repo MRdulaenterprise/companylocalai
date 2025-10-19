@@ -12,9 +12,9 @@ import {
   AgentCapabilities,
   isAssistantsEndpoint,
   defaultAgentCapabilities,
-} from 'librechat-data-provider';
+} from 'company-local-ai-data-provider';
 import type { DropTargetMonitor } from 'react-dnd';
-import type * as t from 'librechat-data-provider';
+import type * as t from 'company-local-ai-data-provider';
 import store, { ephemeralAgentByConvoId } from '~/store';
 import useFileHandling from './useFileHandling';
 import { isEphemeralAgent } from '~/common';

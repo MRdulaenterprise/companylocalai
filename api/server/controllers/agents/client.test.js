@@ -1,9 +1,9 @@
-const { Providers } = require('@librechat/agents');
-const { Constants, EModelEndpoint } = require('librechat-data-provider');
+const { Providers } = require('@company-local-ai/agents');
+const { Constants, EModelEndpoint } = require('company-local-ai-data-provider');
 const AgentClient = require('./client');
 
-jest.mock('@librechat/agents', () => ({
-  ...jest.requireActual('@librechat/agents'),
+jest.mock('@company-local-ai/agents', () => ({
+  ...jest.requireActual('@company-local-ai/agents'),
   createMetadataAggregator: () => ({
     handleLLMEnd: jest.fn(),
     collected: [],
@@ -1260,7 +1260,7 @@ describe('AgentClient - titleConvo', () => {
 
     it('should handle mixed content types correctly', async () => {
       const { HumanMessage } = require('@langchain/core/messages');
-      const { ContentTypes } = require('librechat-data-provider');
+      const { ContentTypes } = require('company-local-ai-data-provider');
 
       const messages = [
         new HumanMessage({

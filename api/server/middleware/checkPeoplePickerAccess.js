@@ -1,5 +1,5 @@
-const { logger } = require('@librechat/data-schemas');
-const { PrincipalType, PermissionTypes, Permissions } = require('librechat-data-provider');
+const { logger } = require('@company-local-ai/data-schemas');
+const { PrincipalType, PermissionTypes, Permissions } = require('company-local-ai-data-provider');
 const { getRoleByName } = require('~/models/Role');
 
 /**

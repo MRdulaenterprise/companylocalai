@@ -1,6 +1,6 @@
-const { isEnabled } = require('@librechat/api');
-const { logger } = require('@librechat/data-schemas');
-const { SystemRoles } = require('librechat-data-provider');
+const { isEnabled } = require('@company-local-ai/api');
+const { logger } = require('@company-local-ai/data-schemas');
+const { SystemRoles } = require('company-local-ai-data-provider');
 
 /**
  * Checks if the user can delete their account

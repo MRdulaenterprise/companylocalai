@@ -1,0 +1,17 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: {{ include "company-local-ai.fullname" $ }}-configenv
+data:
+  {{- if (index .Values "company-local-ai-rag-api" "enabled") }}
+  RAG_API_URL: http://{{ include "rag.fullname" (index .Subcharts "company-local-ai-rag-api") | lower }}.{{ .Release.Namespace | lower }}.svc.cluster.local:8000 
+  {{- end }}
+  {{- if and (not (dig "configEnv" "MEILI_HOST" "" .Values.company-local-ai)) .Values.meilisearch.enabled }}
+  MEILI_HOST: http://{{ include "meilisearch.fullname" .Subcharts.meilisearch }}.{{ .Release.Namespace | lower }}.svc.cluster.local:7700
+  {{- end }}
+  {{- if and (not (dig "configEnv" "MONGO_URI" "" .Values.company-local-ai)) .Values.mongodb.enabled }}
+  MONGO_URI: mongodb://{{ include "mongodb.service.nameOverride" .Subcharts.mongodb }}.{{ .Release.Namespace | lower }}.svc.cluster.local:27017/Company Local AI
+  {{- end }}
+  {{- if .Values.company-local-ai.configEnv }}
+  {{- toYaml .Values.company-local-ai.configEnv | nindent 2 }}
+  {{- end }}

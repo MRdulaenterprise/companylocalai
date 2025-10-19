@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { PixelCard } from '@librechat/client';
-import type { TAttachment, TFile, TAttachmentMetadata } from 'librechat-data-provider';
+import { PixelCard } from '@company-local-ai/client';
+import type { TAttachment, TFile, TAttachmentMetadata } from 'company-local-ai-data-provider';
 import Image from '~/components/Chat/Messages/Content/Image';
 import ProgressText from './ProgressText';
 import { scaleImage } from '~/utils';

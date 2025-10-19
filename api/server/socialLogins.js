@@ -1,8 +1,8 @@
 const passport = require('passport');
 const session = require('express-session');
-const { isEnabled } = require('@librechat/api');
-const { logger } = require('@librechat/data-schemas');
-const { CacheKeys } = require('librechat-data-provider');
+const { isEnabled } = require('@company-local-ai/api');
+const { logger } = require('@company-local-ai/data-schemas');
+const { CacheKeys } = require('company-local-ai-data-provider');
 const {
   openIdJwtLogin,
   facebookLogin,

@@ -1,10 +1,10 @@
-const { Providers } = require('@librechat/agents');
+const { Providers } = require('@company-local-ai/agents');
 const {
   primeResources,
   getModelMaxTokens,
-  extractLibreChatParams,
+  extractCompany Local AIParams,
   optionalChainWithEmptyCheck,
-} = require('@librechat/api');
+} = require('@company-local-ai/api');
 const {
   ErrorTypes,
   EModelEndpoint,
@@ -12,7 +12,7 @@ const {
   isAgentsEndpoint,
   replaceSpecialVars,
   providerEndpointMap,
-} = require('librechat-data-provider');
+} = require('company-local-ai-data-provider');
 const generateArtifactsPrompt = require('~/app/clients/prompts/artifacts');
 const { getProviderConfig } = require('~/server/services/Endpoints');
 const { processFiles } = require('~/server/services/Files/process');
@@ -69,7 +69,7 @@ const initializeAgent = async ({
     ),
   );
 
-  const { resendFiles, maxContextTokens, modelOptions } = extractLibreChatParams(_modelOptions);
+  const { resendFiles, maxContextTokens, modelOptions } = extractCompany Local AIParams(_modelOptions);
 
   if (isInitialAgent && conversationId != null && resendFiles) {
     const fileIds = (await getConvoFiles(conversationId)) ?? [];
@@ -157,7 +157,7 @@ const initializeAgent = async ({
     agent.provider = options.provider;
   }
 
-  /** @type {import('@librechat/agents').GenericTool[]} */
+  /** @type {import('@company-local-ai/agents').GenericTool[]} */
   let tools = options.tools?.length ? options.tools : structuredTools;
   if (
     (agent.provider === Providers.GOOGLE || agent.provider === Providers.VERTEXAI) &&
@@ -175,7 +175,7 @@ const initializeAgent = async ({
     tools = structuredTools.concat(options.tools);
   }
 
-  /** @type {import('@librechat/agents').ClientOptions} */
+  /** @type {import('@company-local-ai/agents').ClientOptions} */
   agent.model_parameters = { ...options.llmConfig };
   if (options.configOptions) {
     agent.model_parameters.configuration = options.configOptions;

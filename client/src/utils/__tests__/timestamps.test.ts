@@ -1,4 +1,4 @@
-import { LocalStorageKeys } from 'librechat-data-provider';
+import { LocalStorageKeys } from 'company-local-ai-data-provider';
 import {
   setTimestamp,
   setTimestampedValue,

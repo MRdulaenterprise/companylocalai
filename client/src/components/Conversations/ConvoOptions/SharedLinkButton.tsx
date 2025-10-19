@@ -8,8 +8,8 @@ import {
   Label,
   OGDialogTemplate,
   useToastContext,
-} from '@librechat/client';
-import type { TSharedLinkGetResponse } from 'librechat-data-provider';
+} from '@company-local-ai/client';
+import type { TSharedLinkGetResponse } from 'company-local-ai-data-provider';
 import {
   useCreateSharedLinkMutation,
   useUpdateSharedLinkMutation,

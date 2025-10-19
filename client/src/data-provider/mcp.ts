@@ -1,11 +1,11 @@
 /**
  * Dedicated queries for MCP (Model Context Protocol) tools
- * Decoupled from regular LibreChat tools
+ * Decoupled from regular Company Local AI tools
  */
 import { useQuery } from '@tanstack/react-query';
-import { QueryKeys, dataService } from 'librechat-data-provider';
+import { QueryKeys, dataService } from 'company-local-ai-data-provider';
 import type { UseQueryOptions, QueryObserverResult } from '@tanstack/react-query';
-import type { MCPServersResponse } from 'librechat-data-provider';
+import type { MCPServersResponse } from 'company-local-ai-data-provider';
 
 /**
  * Hook for fetching MCP-specific tools

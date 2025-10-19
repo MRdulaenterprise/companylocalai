@@ -1,12 +1,12 @@
 const { Router } = require('express');
-const { logger } = require('@librechat/data-schemas');
-const { CacheKeys, Constants } = require('librechat-data-provider');
+const { logger } = require('@company-local-ai/data-schemas');
+const { CacheKeys, Constants } = require('company-local-ai-data-provider');
 const {
   createSafeUser,
   MCPOAuthHandler,
   MCPTokenStorage,
   getUserMCPAuthMap,
-} = require('@librechat/api');
+} = require('@company-local-ai/api');
 const { getMCPManager, getFlowStateManager, getOAuthReconnectionManager } = require('~/config');
 const { getMCPSetupData, getServerConnectionStatus } = require('~/server/services/MCP');
 const { findToken, updateToken, createToken, deleteTokens } = require('~/models');
@@ -22,7 +22,7 @@ const router = Router();
 
 /**
  * Get all MCP tools available to the user
- * Returns only MCP tools, completely decoupled from regular LibreChat tools
+ * Returns only MCP tools, completely decoupled from regular Company Local AI tools
  */
 router.get('/tools', requireJwtAuth, async (req, res) => {
   return getMCPTools(req, res);

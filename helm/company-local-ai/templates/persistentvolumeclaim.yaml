@@ -1,0 +1,16 @@
+{{- if .Values.company-local-ai.imageVolume.enabled }}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ include "company-local-ai.fullname" $ }}-images
+spec:
+  accessModes:
+    - {{ .Values.company-local-ai.imageVolume.accessModes }}
+{{- if .Values.company-local-ai.imageVolume.storageClassName }}
+  storageClassName: {{ .Values.company-local-ai.imageVolume.storageClassName }}
+{{- end }}          
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: {{ .Values.company-local-ai.imageVolume.size }}
+{{- end }}

@@ -1,4 +1,4 @@
-import { FileSources } from 'librechat-data-provider';
+import { FileSources } from 'company-local-ai-data-provider';
 import ImagePreview from './ImagePreview';
 import RemoveFile from './RemoveFile';
 

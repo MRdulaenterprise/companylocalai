@@ -1,9 +1,9 @@
 const jwksRsa = require('jwks-rsa');
-const { logger } = require('@librechat/data-schemas');
+const { logger } = require('@company-local-ai/data-schemas');
 const { HttpsProxyAgent } = require('https-proxy-agent');
-const { SystemRoles } = require('librechat-data-provider');
+const { SystemRoles } = require('company-local-ai-data-provider');
 const { Strategy: JwtStrategy, ExtractJwt } = require('passport-jwt');
-const { isEnabled, findOpenIDUser } = require('@librechat/api');
+const { isEnabled, findOpenIDUser } = require('@company-local-ai/api');
 const { updateUser, findUser } = require('~/models');
 
 /**

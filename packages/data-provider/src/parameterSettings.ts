@@ -90,7 +90,7 @@ const createDefinition = (
   return { ...base, ...overrides } as SettingDefinition;
 };
 
-export const librechat = {
+export const company-local-ai = {
   modelLabel: {
     key: 'modelLabel',
     label: 'com_endpoint_custom_name',
@@ -155,10 +155,10 @@ export const librechat = {
 
 const openAIParams: Record<string, SettingDefinition> = {
   chatGptLabel: {
-    ...librechat.modelLabel,
+    ...company-local-ai.modelLabel,
     key: 'chatGptLabel',
   },
-  promptPrefix: librechat.promptPrefix,
+  promptPrefix: company-local-ai.promptPrefix,
   temperature: createDefinition(baseDefinitions.temperature, {
     default: openAISettings.temperature.default,
     range: {
@@ -626,50 +626,50 @@ const google: Record<string, SettingDefinition> = {
 };
 
 const googleConfig: SettingsConfiguration = [
-  librechat.modelLabel,
-  librechat.promptPrefix,
-  librechat.maxContextTokens,
+  company-local-ai.modelLabel,
+  company-local-ai.promptPrefix,
+  company-local-ai.maxContextTokens,
   google.maxOutputTokens,
   google.temperature,
   google.topP,
   google.topK,
-  librechat.resendFiles,
+  company-local-ai.resendFiles,
   google.thinking,
   google.thinkingBudget,
   google.web_search,
-  librechat.fileTokenLimit,
+  company-local-ai.fileTokenLimit,
 ];
 
 const googleCol1: SettingsConfiguration = [
   baseDefinitions.model as SettingDefinition,
-  librechat.modelLabel,
-  librechat.promptPrefix,
+  company-local-ai.modelLabel,
+  company-local-ai.promptPrefix,
 ];
 
 const googleCol2: SettingsConfiguration = [
-  librechat.maxContextTokens,
+  company-local-ai.maxContextTokens,
   google.maxOutputTokens,
   google.temperature,
   google.topP,
   google.topK,
-  librechat.resendFiles,
+  company-local-ai.resendFiles,
   google.thinking,
   google.thinkingBudget,
   google.web_search,
-  librechat.fileTokenLimit,
+  company-local-ai.fileTokenLimit,
 ];
 
 const openAI: SettingsConfiguration = [
-  librechat.modelLabel,
-  librechat.promptPrefix,
-  librechat.maxContextTokens,
+  company-local-ai.modelLabel,
+  company-local-ai.promptPrefix,
+  company-local-ai.maxContextTokens,
   openAIParams.max_tokens,
   openAIParams.temperature,
   openAIParams.top_p,
   openAIParams.frequency_penalty,
   openAIParams.presence_penalty,
   baseDefinitions.stop,
-  librechat.resendFiles,
+  company-local-ai.resendFiles,
   baseDefinitions.imageDetail,
   openAIParams.web_search,
   openAIParams.reasoning_effort,
@@ -677,24 +677,24 @@ const openAI: SettingsConfiguration = [
   openAIParams.reasoning_summary,
   openAIParams.verbosity,
   openAIParams.disableStreaming,
-  librechat.fileTokenLimit,
+  company-local-ai.fileTokenLimit,
 ];
 
 const openAICol1: SettingsConfiguration = [
   baseDefinitions.model as SettingDefinition,
-  librechat.modelLabel,
-  librechat.promptPrefix,
+  company-local-ai.modelLabel,
+  company-local-ai.promptPrefix,
 ];
 
 const openAICol2: SettingsConfiguration = [
-  librechat.maxContextTokens,
+  company-local-ai.maxContextTokens,
   openAIParams.max_tokens,
   openAIParams.temperature,
   openAIParams.top_p,
   openAIParams.frequency_penalty,
   openAIParams.presence_penalty,
   baseDefinitions.stop,
-  librechat.resendFiles,
+  company-local-ai.resendFiles,
   baseDefinitions.imageDetail,
   openAIParams.reasoning_effort,
   openAIParams.reasoning_summary,
@@ -702,161 +702,161 @@ const openAICol2: SettingsConfiguration = [
   openAIParams.useResponsesApi,
   openAIParams.web_search,
   openAIParams.disableStreaming,
-  librechat.fileTokenLimit,
+  company-local-ai.fileTokenLimit,
 ];
 
 const anthropicConfig: SettingsConfiguration = [
-  librechat.modelLabel,
-  librechat.promptPrefix,
-  librechat.maxContextTokens,
+  company-local-ai.modelLabel,
+  company-local-ai.promptPrefix,
+  company-local-ai.maxContextTokens,
   anthropic.maxOutputTokens,
   anthropic.temperature,
   anthropic.topP,
   anthropic.topK,
-  librechat.resendFiles,
+  company-local-ai.resendFiles,
   anthropic.promptCache,
   anthropic.thinking,
   anthropic.thinkingBudget,
   anthropic.web_search,
-  librechat.fileTokenLimit,
+  company-local-ai.fileTokenLimit,
 ];
 
 const anthropicCol1: SettingsConfiguration = [
   baseDefinitions.model as SettingDefinition,
-  librechat.modelLabel,
-  librechat.promptPrefix,
+  company-local-ai.modelLabel,
+  company-local-ai.promptPrefix,
 ];
 
 const anthropicCol2: SettingsConfiguration = [
-  librechat.maxContextTokens,
+  company-local-ai.maxContextTokens,
   anthropic.maxOutputTokens,
   anthropic.temperature,
   anthropic.topP,
   anthropic.topK,
-  librechat.resendFiles,
+  company-local-ai.resendFiles,
   anthropic.promptCache,
   anthropic.thinking,
   anthropic.thinkingBudget,
   anthropic.web_search,
-  librechat.fileTokenLimit,
+  company-local-ai.fileTokenLimit,
 ];
 
 const bedrockAnthropic: SettingsConfiguration = [
-  librechat.modelLabel,
+  company-local-ai.modelLabel,
   bedrock.system,
-  librechat.maxContextTokens,
+  company-local-ai.maxContextTokens,
   bedrock.maxTokens,
   bedrock.temperature,
   bedrock.topP,
   bedrock.topK,
   baseDefinitions.stop,
-  librechat.resendFiles,
+  company-local-ai.resendFiles,
   bedrock.region,
   anthropic.thinking,
   anthropic.thinkingBudget,
-  librechat.fileTokenLimit,
+  company-local-ai.fileTokenLimit,
 ];
 
 const bedrockMistral: SettingsConfiguration = [
-  librechat.modelLabel,
-  librechat.promptPrefix,
-  librechat.maxContextTokens,
+  company-local-ai.modelLabel,
+  company-local-ai.promptPrefix,
+  company-local-ai.maxContextTokens,
   bedrock.maxTokens,
   mistral.temperature,
   mistral.topP,
-  librechat.resendFiles,
+  company-local-ai.resendFiles,
   bedrock.region,
-  librechat.fileTokenLimit,
+  company-local-ai.fileTokenLimit,
 ];
 
 const bedrockCohere: SettingsConfiguration = [
-  librechat.modelLabel,
-  librechat.promptPrefix,
-  librechat.maxContextTokens,
+  company-local-ai.modelLabel,
+  company-local-ai.promptPrefix,
+  company-local-ai.maxContextTokens,
   bedrock.maxTokens,
   cohere.temperature,
   cohere.topP,
-  librechat.resendFiles,
+  company-local-ai.resendFiles,
   bedrock.region,
-  librechat.fileTokenLimit,
+  company-local-ai.fileTokenLimit,
 ];
 
 const bedrockGeneral: SettingsConfiguration = [
-  librechat.modelLabel,
-  librechat.promptPrefix,
-  librechat.maxContextTokens,
+  company-local-ai.modelLabel,
+  company-local-ai.promptPrefix,
+  company-local-ai.maxContextTokens,
   meta.temperature,
   meta.topP,
-  librechat.resendFiles,
+  company-local-ai.resendFiles,
   bedrock.region,
-  librechat.fileTokenLimit,
+  company-local-ai.fileTokenLimit,
 ];
 
 const bedrockAnthropicCol1: SettingsConfiguration = [
   baseDefinitions.model as SettingDefinition,
-  librechat.modelLabel,
+  company-local-ai.modelLabel,
   bedrock.system,
   baseDefinitions.stop,
 ];
 
 const bedrockAnthropicCol2: SettingsConfiguration = [
-  librechat.maxContextTokens,
+  company-local-ai.maxContextTokens,
   bedrock.maxTokens,
   bedrock.temperature,
   bedrock.topP,
   bedrock.topK,
-  librechat.resendFiles,
+  company-local-ai.resendFiles,
   bedrock.region,
   anthropic.thinking,
   anthropic.thinkingBudget,
-  librechat.fileTokenLimit,
+  company-local-ai.fileTokenLimit,
 ];
 
 const bedrockMistralCol1: SettingsConfiguration = [
   baseDefinitions.model as SettingDefinition,
-  librechat.modelLabel,
-  librechat.promptPrefix,
+  company-local-ai.modelLabel,
+  company-local-ai.promptPrefix,
 ];
 
 const bedrockMistralCol2: SettingsConfiguration = [
-  librechat.maxContextTokens,
+  company-local-ai.maxContextTokens,
   bedrock.maxTokens,
   mistral.temperature,
   mistral.topP,
-  librechat.resendFiles,
+  company-local-ai.resendFiles,
   bedrock.region,
-  librechat.fileTokenLimit,
+  company-local-ai.fileTokenLimit,
 ];
 
 const bedrockCohereCol1: SettingsConfiguration = [
   baseDefinitions.model as SettingDefinition,
-  librechat.modelLabel,
-  librechat.promptPrefix,
+  company-local-ai.modelLabel,
+  company-local-ai.promptPrefix,
 ];
 
 const bedrockCohereCol2: SettingsConfiguration = [
-  librechat.maxContextTokens,
+  company-local-ai.maxContextTokens,
   bedrock.maxTokens,
   cohere.temperature,
   cohere.topP,
-  librechat.resendFiles,
+  company-local-ai.resendFiles,
   bedrock.region,
-  librechat.fileTokenLimit,
+  company-local-ai.fileTokenLimit,
 ];
 
 const bedrockGeneralCol1: SettingsConfiguration = [
   baseDefinitions.model as SettingDefinition,
-  librechat.modelLabel,
-  librechat.promptPrefix,
+  company-local-ai.modelLabel,
+  company-local-ai.promptPrefix,
 ];
 
 const bedrockGeneralCol2: SettingsConfiguration = [
-  librechat.maxContextTokens,
+  company-local-ai.maxContextTokens,
   meta.temperature,
   meta.topP,
-  librechat.resendFiles,
+  company-local-ai.resendFiles,
   bedrock.region,
-  librechat.fileTokenLimit,
+  company-local-ai.fileTokenLimit,
 ];
 
 export const paramSettings: Record<string, SettingsConfiguration | undefined> = {

@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
-import { useCombobox } from '@librechat/client';
+import { useCombobox } from '@company-local-ai/client';
 import { AutoSizer, List } from 'react-virtualized';
-import { EModelEndpoint } from 'librechat-data-provider';
+import { EModelEndpoint } from 'company-local-ai-data-provider';
 import type { MentionOption, ConvoGenerator } from '~/common';
 import type { SetterOrUpdater } from 'recoil';
 import useSelectMention from '~/hooks/Input/useSelectMention';

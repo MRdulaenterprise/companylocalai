@@ -1,9 +1,9 @@
 /**
  * MCP Tools Controller
- * Handles MCP-specific tool endpoints, decoupled from regular LibreChat tools
+ * Handles MCP-specific tool endpoints, decoupled from regular Company Local AI tools
  */
-const { logger } = require('@librechat/data-schemas');
-const { Constants } = require('librechat-data-provider');
+const { logger } = require('@company-local-ai/data-schemas');
+const { Constants } = require('company-local-ai-data-provider');
 const {
   cacheMCPServerTools,
   getMCPServerTools,

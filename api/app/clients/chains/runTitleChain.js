@@ -1,5 +1,5 @@
 const { z } = require('zod');
-const { logger } = require('@librechat/data-schemas');
+const { logger } = require('@company-local-ai/data-schemas');
 const { langPrompt, createTitlePrompt, escapeBraces, getSnippet } = require('../prompts');
 const { createStructuredOutputChainFromZod } = require('langchain/chains/openai_functions');
 

@@ -10,8 +10,8 @@ import {
   TableCell,
   TableHeader,
   OGDialogTrigger,
-} from '@librechat/client';
-import type { ConversationTagsResponse, TConversationTag } from 'librechat-data-provider';
+} from '@company-local-ai/client';
+import type { ConversationTagsResponse, TConversationTag } from 'company-local-ai-data-provider';
 import { BookmarkContext, useBookmarkContext } from '~/Providers/BookmarkContext';
 import { BookmarkEditDialog } from '~/components/Bookmarks';
 import BookmarkTableRow from './BookmarkTableRow';

@@ -1,12 +1,12 @@
-const { sleep } = require('@librechat/agents');
-const { logger } = require('@librechat/data-schemas');
+const { sleep } = require('@company-local-ai/agents');
+const { logger } = require('@company-local-ai/data-schemas');
 const { tool: toolFn, DynamicStructuredTool } = require('@langchain/core/tools');
 const {
   getToolkitKey,
   hasCustomUserVars,
   getUserMCPAuthMap,
   isActionDomainAllowed,
-} = require('@librechat/api');
+} = require('@company-local-ai/api');
 const {
   Tools,
   Constants,
@@ -20,7 +20,7 @@ const {
   AgentCapabilities,
   defaultAgentCapabilities,
   validateAndParseOpenAPISpec,
-} = require('librechat-data-provider');
+} = require('company-local-ai-data-provider');
 const {
   createActionTool,
   decryptMetadata,

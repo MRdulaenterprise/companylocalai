@@ -1,5 +1,5 @@
 import { Schema } from 'mongoose';
-import { SystemRoles } from 'librechat-data-provider';
+import { SystemRoles } from 'company-local-ai-data-provider';
 import { IUser } from '~/types';
 
 // Session sub-schema

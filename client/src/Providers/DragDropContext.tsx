@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useMemo } from 'react';
-import type { EModelEndpoint } from 'librechat-data-provider';
+import type { EModelEndpoint } from 'company-local-ai-data-provider';
 import { useGetEndpointsQuery } from '~/data-provider';
 import { getEndpointField } from '~/utils/endpoints';
 import { useChatContext } from './ChatContext';

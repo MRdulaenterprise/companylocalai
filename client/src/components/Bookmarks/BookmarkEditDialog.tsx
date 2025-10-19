@@ -1,6 +1,6 @@
 import React, { useRef, Dispatch, SetStateAction } from 'react';
-import { TConversationTag } from 'librechat-data-provider';
-import { OGDialogTemplate, OGDialog, Button, Spinner, useToastContext } from '@librechat/client';
+import { TConversationTag } from 'company-local-ai-data-provider';
+import { OGDialogTemplate, OGDialog, Button, Spinner, useToastContext } from '@company-local-ai/client';
 import { useConversationTagMutation } from '~/data-provider';
 import { NotificationSeverity } from '~/common';
 import BookmarkForm from './BookmarkForm';

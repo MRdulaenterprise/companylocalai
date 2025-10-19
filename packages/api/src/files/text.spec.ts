@@ -1,7 +1,7 @@
-import { FileSources } from 'librechat-data-provider';
+import { FileSources } from 'company-local-ai-data-provider';
 import { Readable } from 'stream';
 
-jest.mock('@librechat/data-schemas', () => ({
+jest.mock('@company-local-ai/data-schemas', () => ({
   logger: {
     debug: jest.fn(),
     warn: jest.fn(),

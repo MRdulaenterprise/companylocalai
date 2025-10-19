@@ -1,5 +1,5 @@
-const { getLLMConfig } = require('@librechat/api');
-const { EModelEndpoint } = require('librechat-data-provider');
+const { getLLMConfig } = require('@company-local-ai/api');
+const { EModelEndpoint } = require('company-local-ai-data-provider');
 const { getUserKey, checkUserKeyExpiry } = require('~/server/services/UserService');
 const AnthropicClient = require('~/app/clients/AnthropicClient');
 

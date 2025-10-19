@@ -1,4 +1,4 @@
-import type { AccessRoleIds } from 'librechat-data-provider';
+import type { AccessRoleIds } from 'company-local-ai-data-provider';
 import type { TranslationKeys } from '~/hooks/useLocalize';
 
 /**

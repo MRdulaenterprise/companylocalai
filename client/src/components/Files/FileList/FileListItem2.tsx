@@ -1,7 +1,7 @@
 import React from 'react';
 import { FileIcon, PlusIcon } from 'lucide-react';
-import { Button, DotsIcon, TrashIcon } from '@librechat/client';
-import type { TFile } from 'librechat-data-provider';
+import { Button, DotsIcon, TrashIcon } from '@company-local-ai/client';
+import type { TFile } from 'company-local-ai-data-provider';
 import { useNavigate } from 'react-router-dom';
 
 type FileListItemProps = {

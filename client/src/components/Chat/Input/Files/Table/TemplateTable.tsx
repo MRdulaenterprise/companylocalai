@@ -1,4 +1,4 @@
-import { DotsIcon, TrashIcon } from '@librechat/client';
+import { DotsIcon, TrashIcon } from '@company-local-ai/client';
 
 export default function Template() {
   return (

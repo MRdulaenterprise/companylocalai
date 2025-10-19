@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ControlCombobox } from '@librechat/client';
+import { ControlCombobox } from '@company-local-ai/client';
 import {
   useWatch,
   FieldPath,

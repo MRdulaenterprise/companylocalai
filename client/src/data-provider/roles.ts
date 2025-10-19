@@ -6,13 +6,13 @@ import {
   memoryPermissionsSchema,
   marketplacePermissionsSchema,
   peoplePickerPermissionsSchema,
-} from 'librechat-data-provider';
+} from 'company-local-ai-data-provider';
 import type {
   UseQueryOptions,
   UseMutationResult,
   QueryObserverResult,
 } from '@tanstack/react-query';
-import type * as t from 'librechat-data-provider';
+import type * as t from 'company-local-ai-data-provider';
 
 export const useGetRole = (
   roleName: string,

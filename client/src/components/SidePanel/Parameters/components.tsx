@@ -1,5 +1,5 @@
-import { ComponentTypes } from 'librechat-data-provider';
-import type { DynamicSettingProps } from 'librechat-data-provider';
+import { ComponentTypes } from 'company-local-ai-data-provider';
+import type { DynamicSettingProps } from 'company-local-ai-data-provider';
 import {
   DynamicCombobox,
   DynamicDropdown,

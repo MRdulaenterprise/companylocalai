@@ -1,8 +1,8 @@
 const jwt = require('jsonwebtoken');
-const { isEnabled } = require('@librechat/api');
+const { isEnabled } = require('@company-local-ai/api');
 const createValidateImageRequest = require('~/server/middleware/validateImageRequest');
 
-jest.mock('@librechat/api', () => ({
+jest.mock('@company-local-ai/api', () => ({
   isEnabled: jest.fn(),
 }));
 
@@ -48,7 +48,7 @@ describe('validateImageRequest middleware', () => {
     });
   });
 
-  describe('Standard LibreChat token flow', () => {
+  describe('Standard Company Local AI token flow', () => {
     beforeEach(() => {
       validateImageRequest = createValidateImageRequest(true);
     });

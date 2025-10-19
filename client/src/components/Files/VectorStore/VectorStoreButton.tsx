@@ -1,6 +1,6 @@
 import React from 'react';
 import { PlusIcon } from 'lucide-react';
-import { Button } from '@librechat/client';
+import { Button } from '@company-local-ai/client';
 
 type VectorStoreButtonProps = {
   onClick: () => void;

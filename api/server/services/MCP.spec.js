@@ -1,6 +1,6 @@
-const { logger } = require('@librechat/data-schemas');
-const { MCPOAuthHandler } = require('@librechat/api');
-const { CacheKeys } = require('librechat-data-provider');
+const { logger } = require('@company-local-ai/data-schemas');
+const { MCPOAuthHandler } = require('@company-local-ai/api');
+const { CacheKeys } = require('company-local-ai-data-provider');
 const {
   createMCPTool,
   createMCPTools,
@@ -10,7 +10,7 @@ const {
 } = require('./MCP');
 
 // Mock all dependencies
-jest.mock('@librechat/data-schemas', () => ({
+jest.mock('@company-local-ai/data-schemas', () => ({
   logger: {
     debug: jest.fn(),
     error: jest.fn(),
@@ -26,7 +26,7 @@ jest.mock('@langchain/core/tools', () => ({
   }),
 }));
 
-jest.mock('@librechat/agents', () => ({
+jest.mock('@company-local-ai/agents', () => ({
   Providers: {
     VERTEXAI: 'vertexai',
     GOOGLE: 'google',
@@ -43,7 +43,7 @@ jest.mock('@librechat/agents', () => ({
   },
 }));
 
-jest.mock('@librechat/api', () => ({
+jest.mock('@company-local-ai/api', () => ({
   MCPOAuthHandler: {
     generateFlowId: jest.fn(),
   },
@@ -52,7 +52,7 @@ jest.mock('@librechat/api', () => ({
   convertWithResolvedRefs: jest.fn((params) => params),
 }));
 
-jest.mock('librechat-data-provider', () => ({
+jest.mock('company-local-ai-data-provider', () => ({
   CacheKeys: {
     FLOWS: 'flows',
   },

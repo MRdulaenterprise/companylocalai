@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useGetModelsQuery } from 'librechat-data-provider/react-query';
+import { useGetModelsQuery } from 'company-local-ai-data-provider/react-query';
 import {
   Permissions,
   alternateName,
@@ -9,8 +9,8 @@ import {
   isAgentsEndpoint,
   getConfigDefaults,
   isAssistantsEndpoint,
-} from 'librechat-data-provider';
-import type { TAssistantsMap, TEndpointsConfig } from 'librechat-data-provider';
+} from 'company-local-ai-data-provider';
+import type { TAssistantsMap, TEndpointsConfig } from 'company-local-ai-data-provider';
 import type { MentionOption } from '~/common';
 import {
   useGetPresetsQuery,

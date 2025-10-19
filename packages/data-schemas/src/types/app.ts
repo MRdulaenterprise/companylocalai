@@ -8,7 +8,7 @@ import type {
   TAgentsEndpoint,
   TCustomEndpoints,
   TAssistantEndpoint,
-} from 'librechat-data-provider';
+} from 'company-local-ai-data-provider';
 
 export type JsonSchemaType = {
   type: 'string' | 'number' | 'integer' | 'float' | 'boolean' | 'array' | 'object';

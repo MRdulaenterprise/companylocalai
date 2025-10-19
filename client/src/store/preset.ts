@@ -1,5 +1,5 @@
 import { atom } from 'recoil';
-import { TPreset } from 'librechat-data-provider';
+import { TPreset } from 'company-local-ai-data-provider';
 
 const defaultPreset = atom<TPreset | null>({
   key: 'defaultPreset',

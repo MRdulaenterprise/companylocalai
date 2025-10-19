@@ -1,6 +1,6 @@
 import { memo } from 'react';
-import { CustomMinimalIcon, XAIcon } from '@librechat/client';
-import { EModelEndpoint, KnownEndpoints } from 'librechat-data-provider';
+import { CustomMinimalIcon, XAIcon } from '@company-local-ai/client';
+import { EModelEndpoint, KnownEndpoints } from 'company-local-ai-data-provider';
 import { IconContext } from '~/common';
 import { cn } from '~/utils';
 

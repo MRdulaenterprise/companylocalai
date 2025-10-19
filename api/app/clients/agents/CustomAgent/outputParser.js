@@ -1,4 +1,4 @@
-const { logger } = require('@librechat/data-schemas');
+const { logger } = require('@company-local-ai/data-schemas');
 const { ZeroShotAgentOutputParser } = require('langchain/agents');
 
 class CustomOutputParser extends ZeroShotAgentOutputParser {

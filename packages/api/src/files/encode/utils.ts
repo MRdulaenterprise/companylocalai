@@ -1,6 +1,6 @@
 import getStream from 'get-stream';
-import { FileSources } from 'librechat-data-provider';
-import type { IMongoFile } from '@librechat/data-schemas';
+import { FileSources } from 'company-local-ai-data-provider';
+import type { IMongoFile } from '@company-local-ai/data-schemas';
 import type { Request } from 'express';
 import type { StrategyFunctions, ProcessedFile } from '~/types/files';
 

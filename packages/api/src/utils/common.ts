@@ -1,5 +1,5 @@
-import { Providers } from '@librechat/agents';
-import { AuthType } from 'librechat-data-provider';
+import { Providers } from '@company-local-ai/agents';
+import { AuthType } from 'company-local-ai-data-provider';
 
 /**
  * Checks if the given value is truthy by being either the boolean `true` or a string

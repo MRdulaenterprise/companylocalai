@@ -1,5 +1,5 @@
-import { Spinner, FileIcon } from '@librechat/client';
-import type { TFile } from 'librechat-data-provider';
+import { Spinner, FileIcon } from '@company-local-ai/client';
+import type { TFile } from 'company-local-ai-data-provider';
 import type { ExtendedFile } from '~/common';
 import SourceIcon from './SourceIcon';
 import { cn } from '~/utils';

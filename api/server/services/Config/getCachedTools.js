@@ -1,4 +1,4 @@
-const { CacheKeys } = require('librechat-data-provider');
+const { CacheKeys } = require('company-local-ai-data-provider');
 const getLogStores = require('~/cache/getLogStores');
 
 /**

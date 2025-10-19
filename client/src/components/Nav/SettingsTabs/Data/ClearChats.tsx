@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useClearConversationsMutation } from 'librechat-data-provider/react-query';
+import { useClearConversationsMutation } from 'company-local-ai-data-provider/react-query';
 import {
   OGDialogTemplate,
   Label,
@@ -7,7 +7,7 @@ import {
   OGDialog,
   OGDialogTrigger,
   Spinner,
-} from '@librechat/client';
+} from '@company-local-ai/client';
 import { clearAllConversationStorage } from '~/utils';
 import { useLocalize, useNewConvo } from '~/hooks';
 

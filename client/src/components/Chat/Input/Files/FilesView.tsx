@@ -1,6 +1,6 @@
-import { FileSources, FileContext } from 'librechat-data-provider';
-import type { TFile } from 'librechat-data-provider';
-import { OGDialog, OGDialogContent, OGDialogHeader, OGDialogTitle } from '@librechat/client';
+import { FileSources, FileContext } from 'company-local-ai-data-provider';
+import type { TFile } from 'company-local-ai-data-provider';
+import { OGDialog, OGDialogContent, OGDialogHeader, OGDialogTitle } from '@company-local-ai/client';
 import { useGetFiles } from '~/data-provider';
 import { DataTable, columns } from './Table';
 import { useLocalize } from '~/hooks';

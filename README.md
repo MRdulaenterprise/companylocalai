@@ -87,3 +87,4 @@ For customization help, see the [REBRANDING_GUIDE.md](./REBRANDING_GUIDE.md) or 
 ---
 
 **Note**: This is a template application. Customize the branding, colors, and configuration according to your organization's needs using the provided rebranding guide.# Companylocalai
+# Local-AI-Template
